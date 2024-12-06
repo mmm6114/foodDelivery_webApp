@@ -1,0 +1,19 @@
+.blog{
+    background-color:rgba(255, 255, 255, 0.0);
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+.foo{
+    color:white;
+
+  p{
+    font-family: 'Helvetica';
+    font-size:x-large;
+}
+}
+
+.row-blog{
+    justify-content: center;
+    
+}

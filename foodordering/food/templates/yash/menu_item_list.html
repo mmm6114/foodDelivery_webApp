@@ -1,0 +1,27 @@
+{% extends 'yash/base.html' %}
+
+{% block content %}
+    <h1>Menu Items</h1>
+    <a href="{% url 'admin_menu_item_create' %}" class="btn btn-primary mb-3">Add New Menu Item</a>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in menu_items %}
+                <tr>
+                    <td>{{ item.title }}</td>
+                    <td>${{ item.price }}</td>
+                    <td>
+                        <a href="{% url 'admin_menu_item_update' item.pk %}" class="btn btn-sm btn-primary">Edit</a>
+                        <a href="{% url 'admin_menu_item_delete' item.pk %}" class="btn btn-sm btn-danger">Delete</a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

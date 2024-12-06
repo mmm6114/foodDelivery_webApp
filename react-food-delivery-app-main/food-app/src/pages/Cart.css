@@ -1,0 +1,90 @@
+/* Centering text inside the Cart */
+.Cart {
+    text-align: center;
+  }
+  
+  /* Size and animation for a logo inside Cart (if you have one) */
+  .Cart-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .Cart-logo {
+      animation: Cart-logo-spin infinite 20s linear;
+    }
+  }
+  
+  /* Main container styling for the cart page */
+  .Cart-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  /* Links in the Cart */
+  .Cart-link {
+    color: #61dafb;
+  }
+  
+  /* Keyframe animation for spinning a logo */
+  @keyframes Cart-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .cart-container{
+    position: relative;
+    padding-top: 100px;
+    background: linear-gradient(#282c34,#32353d);
+    height: auto;
+    h1,h5{
+    color: white;
+    margin-bottom: 20px;
+    }
+    text-align: center;
+  }
+  /* Specific layout for cart food items */
+  .food-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .food-card-wrapper {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: left;
+  }
+  
+  /* Styling the "Order Now" button */
+  .order-now-btn {
+    padding: 12px 24px;
+    background-color: #61dafb;
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .order-now-btn:hover {
+    background-color: #21a1f1;
+  }
+  
